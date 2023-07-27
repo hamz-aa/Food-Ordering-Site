@@ -1,32 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Restaurant Website</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="navbar-container container">
-            <input type="checkbox">
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div>
-            <ul class="menu-items">
-                <li><a href="#showcase">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#food">Category</a></li>
-                <li><a href="#food-menu">Menu</a></li>
-                <li><a href="#food-menu">Menu</a></li>
-                <li><a href="#testimonial">Testimonial</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <h1 class="logo">FW</h1>
+      <div class="navbar-container container">
+        <input type="checkbox" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
         </div>
-    </nav>    
-</body>
+        <ul class="menu-items">
+          <li><a href="#showcase">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#food">Category</a></li>
+          <li><a href="#food-menu">Menu</a></li>
+          <li><a href="#testimonial">Testimonial</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <h1 class="logo">FW</h1>
+      </div>
+    </nav>
+
+    <section class="showcase-area" id="showcase">
+      <div class="showcase-container">
+        <h1 class="main-title">Eat Right Food</h1>
+        <p>Eat healthy food, it is good for your health.</p>
+        <a href="#food-menu" class="btn btn-primary">Menu</a>
+      </div>
+    </section>
+
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small">About Us</p>
+                <h2>We've been making healthy food for the last 10 years</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, rem tempore? Mollitia quasi delectus necessitatibus exercitationem fugit, a amet cum dicta voluptate aut, eligendi ipsum quisquam magni nemo nam quos cumque sit molestias pariatur voluptas odit? Eum fugiat ad soluta!</p>
+            </div>
+            <div class="about-img">
+                <img src="./images/about-photo.jpg" alt="About Us">
+            </div>
+        </div>
+    </section>
+
+    <section id="food">
+      <h2>Types of Food</h2>
+      <div class="food-container container">
+        <div class="food-type fruit">
+          <div class="img-container">
+            <img src="./images/food1.jpg" alt="">
+            <div class="img-content">
+              <h3>Fruit</h3>
+              <a href="https://en.wikipedia.org/wiki/Fruit" class="btn btn-primary" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="food-type vegetable">
+          <div class="img-container">
+            <img src="./images/food2.jpg" alt="">
+            <div class="img-content">
+              <h3>Vegetable</h3>
+              <a href="https://en.wikipedia.org/wiki/Vegetable" class="btn btn-primary" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="food-type grain">
+          <div class="img-container">
+            <img src="./images/food3.jpg" alt="">
+            <div class="img-content">
+              <h3>Grain</h3>
+              <a href="https://en.wikipedia.org/wiki/Grain" class="btn btn-primary" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="food-menu">
+      <h2 class="food-menu-heading">Food Menu</h2>
+      <div class="food-menu-container container">
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./images/food-menu1.jpg" alt="">
+          </div>
+          <div class="food-desc">
+            <h2 class="food-title">Food Menu item 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, expedita?</p>
+            <p class="food-price">Price: &#36;20</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./images/food-menu2.jpg" alt="">
+          </div>
+          <div class="food-desc">
+            <h2 class="food-title">Food Menu item 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, expedita?</p>
+            <p class="food-price">Price: &#36;25</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./images/food-menu3.jpg" alt="">
+          </div>
+          <div class="food-desc">
+            <h2 class="food-title">Food Menu item 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, expedita?</p>
+            <p class="food-price">Price: &#36;35</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./images/food-menu4.jpg" alt="">
+          </div>
+          <div class="food-desc">
+            <h2 class="food-title">Food Menu item 4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, expedita?</p>
+            <p class="food-price">Price: &#36;38</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./images/food-menu5.jpg" alt="">
+          </div>
+          <div class="food-desc">
+            <h2 class="food-title">Food Menu item 5</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, expedita?</p>
+            <p class="food-price">Price: &#36;24</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./images/food-menu6.jpg" alt="">
+          </div>
+          <div class="food-desc">
+            <h2 class="food-title">Food Menu item 6</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, expedita?</p>
+            <p class="food-price">Price: &#36;44</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
 </html>
